@@ -1,0 +1,44 @@
+body {
+
+    background-color: black;
+}
+
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    text-align: left;
+    margin: 10px auto;
+
+}
+
+input[type=text]{
+    width: 80%;
+    padding: 8px 8px;
+    margin: 10px 0;
+}
+label {
+  display: block;
+}
+
+input[type=submit]{
+    width: 80%;
+    background-color: YellowGreen;
+    color: White;
+    padding: 12px 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+}

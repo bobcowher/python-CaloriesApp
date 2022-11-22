@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/main.css">
+
+</head>
+<body>
+<div class="main_form">
+<h1>Calories Calculation Form</h1>
+
+<p>Fill in the form and click the button to find out how many calories you need per day</p>
+
+    {% if result %}
+    </br>
+    <p>You need {{calories}} calories per day!</p>
+    </br>
+    <p>* Number given assumes no exercise and that the goal is to maintain current weight. </p>
+    </br>
+    {% endif %}
+
+<form action="/calories-form" method="post">
+
+    <p>{{calorie_form.weight.label}} {{calorie_form.weight}}</p>
+    <p>{{calorie_form.height_feet.label}} {{calorie_form.height_feet}}</p>
+    <p>{{calorie_form.height_inches.label}} {{calorie_form.height_inches}}</p>
+    <p>{{calorie_form.gender.label}} {{calorie_form.gender}}</p>
+    <p>{{calorie_form.age.label}} {{calorie_form.age}}</p>
+    <p>{{calorie_form.city.label}} {{calorie_form.city}}</p>
+    <p>{{calorie_form.country.label}} {{calorie_form.country}}</p>
+    </br>
+    <p>{{calorie_form.button}}</p>
+
+</form>
+</div>
+</body>
+</html>
